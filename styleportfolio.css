@@ -1,0 +1,114 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+.Navbar{
+    padding: 30px 12px; /* gör rutan runt txeten större */
+    background-color: black;
+    scroll-behavior: smooth;
+
+}
+
+.Navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.Navbar a{
+    color: whitesmoke;
+}
+
+.Navbar li a:hover{
+    border-bottom: 3px solid;
+}
+
+.Hero{
+    margin: 250px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    border-bottom: 3px solid;
+}
+
+.heroText{
+    
+    flex: 1;
+    text-align: left;
+}
+
+.heroText h1 {
+    font-size: 30px;
+}
+.heroText h {
+    font-size: 40px;
+}
+.heroText p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.heroImgdiv{
+    flex: 1;                   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.heroimg{
+    border-radius: 380px;
+    border-color: black;
+    border-style: solid;
+    width: 75%;
+}
+
+.cvButton{
+    margin-top: 10px;
+    padding: 5px 17px;
+    background-color: black;
+    border-radius: 30px;
+}
+.cvButton a{
+    color: whitesmoke;
+}
+
+.projects {
+    margin: 290px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 3px solid;
+    margin-bottom: 170px;
+
+    
+}
+
+.projects div{
+    margin-top: 70px;
+    border-color: black;
+    
+}
+
+.placeholder img {
+    margin-left: 30px;
+    border-radius: 30px;
+    width: 20%;
+    margin-bottom: 170px;
+}
+
+
+.skills img{
+    width: 20%;
+    margin-bottom: 170px;
+}
+
