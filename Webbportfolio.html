@@ -58,11 +58,23 @@
             </div>
         </article>
     </section>
-
-    <section>
-        <article id="contact" class="projects">
-            <h1>Kontakt</h1>
-            
+    <!-- Följer formuläret från FORMSUBMIT -->
+    <section >
+        <article id="contact">
+            <div class="fromContainer">
+            <h1 class="rubrik">Kontakt</h1>
+            <form  class="contactForm"
+                action="https://formsubmit.co/nimajamal.ali@yh.nackademin.se"
+                 method="post"
+                 target="_blank">
+                <div class="form-group"> 
+                    <input class="fromStyle" type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <textarea class="textarea" placeholder="Skriv här"  name="message" rows="10" required></textarea>
+                <button type="submit" class="btn ">Skicka</button>
+                </div>
+            </form>
+            </div>
         </article>
     </section>
 </body>

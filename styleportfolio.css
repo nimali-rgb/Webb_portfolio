@@ -1,114 +1,149 @@
-*{
-     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+    margin: 0;                 /* Tar bort all standardmarginal från alla element */
+    padding: 0;                /* Tar bort all standardpadding från alla element */
+    box-sizing: border-box;    /* Gör att bredd/höjd räknas inklusive padding och border (lättare att styla) */
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-
+    text-decoration: none;    
+    list-style: none;          /* Tar bort punkter/nummer */
 }
 
 
-.Navbar{
-    padding: 30px 12px; /* gör rutan runt txeten större */
-    background-color: black;
-    scroll-behavior: smooth;
-
+.Navbar {
+    padding: 30px 12px;        /* Ger extra utrymme runt texten i navbaren */
+    background-color: black; 
 }
 
 .Navbar ul {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
+    display: flex;             
+    justify-content: center;   /* Centrerar alla list-element horisontellt */
+    gap: 35px;               
 }
 
-.Navbar a{
-    color: whitesmoke;
+.Navbar a {
+    color: whitesmoke;         
 }
 
-.Navbar li a:hover{
-    border-bottom: 3px solid;
+.Navbar li a:hover {
+    border-bottom: 3px solid;  /* Lägger en linje under länken vid hover */
 }
 
-.Hero{
-    margin: 250px;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-    gap: 40px;
-    border-bottom: 3px solid;
+.Hero {
+    margin: 250px;             /* Ger stort yttre avstånd runt hero-sektionen */
+    margin-top: 60px;          /* Justerar toppmarginalen separat */
+    display: flex;          
+    justify-content: space-around; /* Sprider ut text och bild med jämnt utrymme */
+    align-items: center;       /* Centrerar innehållet vertikalt */
+    padding: 40px;             /* Inre avstånd runt hero-innehållet */
+    gap: 40px;                 /* Mellanrum mellan text och bild */
+    border-bottom: 3px solid;  /* Linje under hero-sektionen */
 }
 
-.heroText{
-    
-    flex: 1;
-    text-align: left;
+.heroText {
+    flex: 1;                   /* Tar upp lika mycket plats som bilden */
+    text-align: left;          /* Vänsterställer texten */
 }
 
 .heroText h1 {
-    font-size: 30px;
+    font-size: 30px;        
 }
+
 .heroText h {
-    font-size: 40px;
+    font-size: 40px;           
 }
+
 .heroText p {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 10px;          /* Avstånd ovanför paragrafen */
+    font-size: 20px;        
 }
 
-.heroImgdiv{
-    flex: 1;                   
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+.heroImgdiv {
+    flex: 1;                   /* Tar upp lika mycket plats som texten */
+    display: flex;             
+    justify-content: center;   /* Centrerar bilden horisontellt */
+    margin-bottom: 100px;      /* Avstånd under bilden */
 }
 
-.heroimg{
-    border-radius: 380px;
-    border-color: black;
-    border-style: solid;
-    width: 75%;
+.heroimg {
+    border-radius: 380px;      /* Gör bilden rund (stor radie) */
+    border-color: black;   
+    border-style: solid;       /* Solid linje runt bilden */
+    width: 75%;                /* Bilden tar upp 75% av containerbredden */
 }
 
-.cvButton{
-    margin-top: 10px;
-    padding: 5px 17px;
+.cvButton {
+    margin-top: 10px;          /* Avstånd ovanför knappen */
+    padding: 5px 17px;         /* Inre avstånd i knappen */
     background-color: black;
-    border-radius: 30px;
+    border-radius: 30px;    
 }
-.cvButton a{
-    color: whitesmoke;
+
+.cvButton a {
+    color: whitesmoke;        
 }
 
 .projects {
-    margin: 290px;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 35px;
-    border-bottom: 3px solid;
-    margin-bottom: 170px;
-
-    
+    margin: 290px;             /* Stort yttre avstånd runt projektsektionen */
+    margin-top: 100px;         /* Justerar toppmarginalen separat */
+    text-align: center;     
+    font-size: 35px;         
+    border-bottom: 3px solid;  /* Linje under projektsektionen */
+    margin-bottom: 170px;      /* Avstånd under sektionen */
 }
 
-.projects div{
-    margin-top: 70px;
-    border-color: black;
-    
+.projects div {
+    margin-top: 70px;          /* Avstånd ovanför varje projekt-div */
+    border-color: black;       
 }
 
 .placeholder img {
-    margin-left: 30px;
-    border-radius: 30px;
-    width: 20%;
-    margin-bottom: 170px;
+    margin-left: 30px;         /* Flyttar bilden lite åt höger */
+    border-radius: 30px;       /* Rundade hörn på placeholder-bilden */
+    width: 20%;                
+    margin-bottom: 170px;      /* Avstånd under bilden */
 }
 
-
-.skills img{
-    width: 20%;
-    margin-bottom: 170px;
+.skills img {
+    width: 20%;                /* Bilder i skills-sektionen tar upp 20% bredd */
+    margin-bottom: 170px;      /* Avstånd under varje bild */
 }
 
+.rubrik{
+    margin-bottom: 25px;
+    margin-top: 100px;         /* Justerar toppmarginalen separat */
+    text-align: center;     
+    font-size: 70px;         
+   
+}
+
+.contactForm{
+    display: grid;
+    justify-content: center;
+}
+ 
+.form-group{
+    display: grid;
+}
+ input {
+    margin-bottom: 20px; /* avstånd under */
+    border-radius: 20px; /* rundade hörn */
+    block-size: 50px; /* höjd */
+    text-align: center; /* centrerad text */
+    font-size: 30px; /* stor text */
+}
+.textarea{
+    margin-bottom: 20px; /* avstånd under */
+    border-radius: 20px; /* rundade hörn */
+    block-size: 50px 100px; /* höjd */
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px; /* stor text */
+}
+
+.btn{
+    border-radius: 20px; /* rundade hörn */
+    block-size: 50px; /* höjd */
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 170px;
+    
+}
