@@ -28,7 +28,7 @@
 }
 
 .Hero {
-    margin: 250px;             /* Ger stort yttre avstånd runt hero-sektionen */
+    margin: 60px 20px;             /* Ger stort yttre avstånd runt hero-sektionen */
     margin-top: 60px;          /* Justerar toppmarginalen separat */
     display: flex;          
     justify-content: space-around; /* Sprider ut text och bild med jämnt utrymme */
@@ -82,7 +82,7 @@
 }
 
 .projects {
-    margin: 290px;             /* Stort yttre avstånd runt projektsektionen */
+    margin: 60px 20px;                /* Stort yttre avstånd runt projektsektionen */
     margin-top: 100px;         /* Justerar toppmarginalen separat */
     text-align: center;     
     font-size: 35px;         
@@ -100,11 +100,13 @@
     border-radius: 30px;       /* Rundade hörn på placeholder-bilden */
     width: 20%;                
     margin-bottom: 170px;      /* Avstånd under bilden */
+    cursor: pointer;
 }
 
 .skills img {
     width: 20%;                /* Bilder i skills-sektionen tar upp 20% bredd */
     margin-bottom: 170px;      /* Avstånd under varje bild */
+    cursor: pointer;
 }
 
 .rubrik{
@@ -144,6 +146,43 @@
     block-size: 50px; /* höjd */
     font-size: 20px;
     cursor: pointer;
-    margin-bottom: 170px;
+    margin-bottom: 100px;
     
 }
+
+
+.footer{
+    padding: 30px 12px;        
+    background-color: black; 
+    color: whitesmoke;
+    display: flex;          
+    justify-content: space-around; /* Sprider ut text och bild med jämnt utrymme */
+    align-items: center;  
+    gap: 90px;
+}
+
+.fotKontakt img {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fotKontakt a{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.fotKontakt a:hover {
+     border-bottom: 3px solid;
+
+}
+
+.ref h4{
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ref p{
+    margin-bottom: 5px;
+}
+
