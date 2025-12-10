@@ -11,8 +11,6 @@ Innehåll
 - [Användning](#-användning)
 - [Tekniker](#-tekniker)
 - [Framtida förbättringar](#-framtida-förbättringar)
-- [Kontakt](#-kontakt)
-- [Licens](#-licens)
 
 ---
 
