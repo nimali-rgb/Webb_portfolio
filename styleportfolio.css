@@ -28,12 +28,13 @@
 }
 
 .Hero {
-    margin: 140px 120px;             /* Ger stort yttre avstånd runt hero-sektionen */
+    margin: 5% auto;
+    max-width: 1200px;
+    padding: 20px;
     margin-top: 60px;          /* Justerar toppmarginalen separat */
     display: flex;          
     justify-content: space-around; /* Sprider ut text och bild med jämnt utrymme */
     align-items: center;       /* Centrerar innehållet vertikalt */
-    padding: 40px;             /* Inre avstånd runt hero-innehållet */
     gap: 40px;                 /* Mellanrum mellan text och bild */
     border-bottom: 3px solid;  /* Linje under hero-sektionen */
 }
@@ -110,13 +111,20 @@
 }
 
 .rubrik{
+    font-size: 7vw;   /* Skalar med skärmens bredd */
+    margin-top: 5vh;  /* Skalar med skärmens höjd */    
     margin-bottom: 25px;
-    margin-top: 100px;         /* Justerar toppmarginalen separat */
     text-align: center;     
-    font-size: 70px;   
-          
-   
 }
+
+/* Mobil */
+@media (max-width: 600px) {
+  .Kompetenser {
+    font-size: 10vw;
+    margin-top: 40px;
+  }
+}
+
 
 .contactForm{
     display: grid;
